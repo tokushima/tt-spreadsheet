@@ -21,6 +21,7 @@
 			"phpoffice/phpspreadsheet/samples",
 			"phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Pdf",
 			
+			"jpgraph/jpgraph/lib/jpgraph/docs",
 			"jpgraph/jpgraph/lib/jpgraph/src/barcode",
 			"jpgraph/jpgraph/lib/jpgraph/src/jpgraph_utils.inc.php",
 			"jpgraph/jpgraph/lib/jpgraph/src/jpgraph_windrose.php"
