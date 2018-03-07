@@ -1,0 +1,38 @@
+{
+	"name" : "tt/spreadsheet",
+	"type" : "library",
+	"license" : "MIT",
+	"authors" : [{
+		"name" : "tokushima"
+	}],
+	"autoload" : {
+		"psr-4" : {
+			"tt\\" : "lib/tt/"
+		}
+	},
+	"require" : {
+       	"phpoffice/phpspreadsheet": "1.2.0",
+		"jpgraph/jpgraph" : "^4.0"	
+	},
+	"after" : {
+		"exclude": [
+			"phpoffice/phpspreadsheet/bin",
+			"phpoffice/phpspreadsheet/docs",
+			"phpoffice/phpspreadsheet/samples",
+			"phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Pdf",
+			
+			"jpgraph/jpgraph/lib/jpgraph/src/barcode",
+			"jpgraph/jpgraph/lib/jpgraph/src/jpgraph_utils.inc.php",
+			"jpgraph/jpgraph/lib/jpgraph/src/jpgraph_windrose.php"
+		],
+		"dummy": [
+			"\\PhpOffice\\PhpSpreadsheet\\Writer\\Pdf\\Dompdf",
+            "\\PhpOffice\\PhpSpreadsheet\\Writer\\Pdf\\Mpdf",
+            "\\PhpOffice\\PhpSpreadsheet\\Writer\\Pdf\\Tcpdf",
+            "JpGraph"
+		],
+		"dummy-exception": [
+			"JpGraph\\ModuleNotFoundException"
+		]
+	}
+}
