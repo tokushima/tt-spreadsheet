@@ -1,8 +1,7 @@
 /vendor/
 /cmdman.phar
-/composer.lock
 /composer.phar
 /test.php
-/AAAAA.xlsx
 /.buildpath
 /.project
+/.settings/
