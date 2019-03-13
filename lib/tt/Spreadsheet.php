@@ -118,8 +118,10 @@ class Spreadsheet{
 	 */
 	public function write($filename=null){
 		if(empty($filename)){
-			$filename = date('YmdHis').'.xlsx';
+			$filename = getcwd().'/'.date('YmdHis').'.xlsx';
 		}
+		\ebi\Util::mkdir(dirname($filename));
+		
 		$writer = new \PhpOffice\PhpSpreadsheet\Writer\Xlsx($this->spshee);
 		$writer->save($filename);
 	}
