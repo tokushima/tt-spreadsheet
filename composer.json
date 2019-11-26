@@ -12,7 +12,7 @@
 	},
 	"require" : {
 	    "tokushima/ebi": ">=2.1.9",
-       	"phpoffice/phpspreadsheet": "1.2.0",
+       	"phpoffice/phpspreadsheet": "1.8.0",
 		"jpgraph/jpgraph" : "^4.0"	
 	},
 	"after" : {
